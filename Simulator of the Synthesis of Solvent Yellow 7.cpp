@@ -229,18 +229,18 @@ void principles()
 {
 	printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
 	cout << "I. Principles of this Experiment" << endl;
-	cout << "Nitrites can react with amino groups, to form diazonium cation." << endl;
-	cout << "In this experiment, we will utilize this property, mixing aqueous aniline hydrochloride with sodium nitrite in 0.1% HCl, to obtain a solution containing diazobenzene chloride." << endl;
-	cout << "Then phenol reacts with diazobenzene cation under alkaline conditions, performing a para substitution on phenol, to form the product solvent yellow 7, 4-(phenyldiazenyl)phenol in IUPAC." << endl;
+	cout << "Nitric acid reacts with anilines to form diazonium in acids." << endl;
+	cout << "In this experiment, we will prepare a solution of phenyldiazonium chloride from aniline hydrochloride and acidified sodium nitrite using this diazotization reaction." << endl;
+	cout << "Then, phenyldiazonium chloride reacts with phenol when the HCl was partially neutralized, to form a para-sustituted product, solvent yellow 7 [4-(phenyldiazenyl)phenol]." << endl;
 	cout << "[Figure 1]" << endl;
 	pause();
-	cout << "We will apply flow chemistry equipments, due to the reaction's danger and difficulty raised from the explosive and unstable azobenzene chloride intermediate, conducting the two steps continuously in two coil reactors, 2.0 m in length and 1 mL in volume." << endl;
-	cout << "To push the solutions into the tubes, a four-way syringe pump will be set up at the front, to inject reactants into the system at a constant speed." << endl;
+	cout << "We will employ flow chemistry systems due to the hazardous and challenging nature of the reaction, stemming from the explosive and unstable phenyldiazonium chloride intermediate." << endl;
+	cout << "The two-step process will be continuously conducted in coil reactors (each measuring 2.0 m in length with 1 mL internal volume), with a four-channel syringe pump positioned at the inlet to deliver reactants into the system at a constant flow rate." << endl;
 	cout << "[Figure 2]" << endl;
 	pause();
-	cout << "Azobenzene chloride, formed in the coil reactors, reacts instantly with phenol as they attached to each other in the second coil reactor." << endl;
-	cout << "In this reaction, the rate of electrophilic aromatic substitution is higher than the rate of production of the azobenzene cation." << endl;
-	cout << "According to references, the rate of diazotization is a third order reaction, first order in aniline and second order in nitrite." << endl;
+	cout << "The phenyldiazonium chloride intermediate, continuously formed within the coil reactors, undergoes immediate coupling with phenol upon their controlled combination in the secondary reactor." << endl;
+	cout << "This sequential process ensures electrophilic aromatic substitution kinetics dominate over azobenzene cation generation, as evidenced by the substitution rate substantially outpacing cation formation." << endl;
+	cout << "Literature-established reaction orders confirm the diazotization step follows third-order kinetics, first-order with respect to aniline concentration and second-order dependent on nitrite availability." << endl;
 	cout << "Therefore, " << endl;
 	cout << "[Equation 1]" << endl;
 	cout << "This rate law was rewritten to reflect the concentration evolution along the reactor, assuming a constant flow rate." << endl;
@@ -249,21 +249,21 @@ void principles()
 	pause();
 	cout << "Then, we can integrate the concentration evolution to find a linear relationship." << endl;
 	cout << "[Equation 3]" << endl;
-	cout << "[Equation 4]" << endl;
-	cout << "When the reaction is occuring in a flow at a quite low speed, we can approximately consider it complete. Absorbance is required to be measured for three times, to obtain an average maximum absorbance Am." << endl;
-	cout << "In the following groups of experiments, we are supposed to change the residence time of the reaction by changing the input speed of the flow." << endl;
-	cout << "When t is selected for the residence time, the absorbance will be marked as At." << endl;
+	cout << "Under low-flow-rate conditions, the reaction achieves near-completion status through residence time optimization." << endl;
+	cout << "Triplicate absorbance measurements are conducted to determine the average maximum absorbance value (Am)." << endl;
+	cout << "Subsequent experimental phases employ flow rate modulation to systematically vary reaction residence times." << endl;
+	cout << "For each designated residence time (t), the corresponding absorbance measurement is recorded as At." << endl;
 	pause();
 	cout << "Bring them into Beer-Lambert Law:" << endl;
+	cout << "[Equation 4]" << endl;
+	cout << "Put the initial concentrations into the two equations, then:" << endl;
 	cout << "[Equation 5]" << endl;
-	cout << "[Equation 6]" << endl;
-	cout << "[Equation 7]" << endl;
-	cout << "Finnaly, [Formula 1] is marked as Y, and[Formula 2] is marked as X. Then there is Y=kX+b." << endl;
-	cout << "After measuring Ats for different ts and calculating corresponding Xs and Y, we can derive the rate constant for the synthesis of solvent yellow 7 from Y-X graph." << endl;
+	cout << "Finnaly, [Formula 1] is marked as Y, and[Formula 2] is marked as X." << endl;
+	cout << "Then there is Y=kX, where k is the observed rate constant. After measuring Ats for different ts and calculating corresponding Xs and Y, we can derive the rate constant for the synthesis of solvent yellow 7 from Y-X graph." << endl;
 	pause();
 	cout << endl;
 	cout << "Then, let's calculate the theoritical weight of the reactants." << endl;
-	cout << "Our target is to prepare 1000 mL 0.010 M aniline in 0.1% hydrochloric acid, 1000 mL 0.020 M sodium hydroxide in deionized water, 1000 mL 0.010 M phenol in deionized water." << endl;
+	cout << "Our target is to prepare 1000 mL 0.010 M aniline in 0.1% hydrochloric acid, 1000 mL 0.060 M sodium hydroxide in deionized water, 1000 mL 0.010 M phenol in deionized water." << endl;
 	cout << "The 0.1% hydrochloric acid will be diluted from 37% HCl with deionized water. We will prepare 2000 mL at a time." << endl;
 	cout << "100 mL 0.011 M sodium nitrite in 0.1% hydrochloric acid will be prepared just before each group of experiment." << endl;
 	cout << "Our starting materials are listed below:" << endl;
@@ -351,15 +351,15 @@ void principles()
 	{
 		cout << "The weight of sodium hydroxide should be (in mg):" ;
 		cin >> calinput;
-		if(calinput.length() == 3)
+		if(calinput.length() == 4)
 		{
-			NaOH = (int(calinput[0])-48)*100+(int(calinput[1])-48)*10+(int(calinput[2])-48);
+			NaOH = (int(calinput[0])-48)*1000+(int(calinput[1])-48)*100+(int(calinput[2])-48)*10+(int(calinput[3])-48);
 		}
 		else
 		{
 			NaOH = 0;
 		}
-		if(NaOH == 800)
+		if(NaOH == 2400)
 		{
 			cout << "Correct." << endl;
 			checkweight = 0;
@@ -536,17 +536,17 @@ void phenol()
 
 void sodiumhydroxideprint()
 {
-	cout << "Theoritical weight: 0.800 g" << endl;
+	cout << "Theoritical weight: 2.400 g" << endl;
 	cout << "Current weight: " << NaOH/10000 << "." << (NaOH/1000)%10 << (NaOH/100)%10 << (NaOH/10)%10 << NaOH%10 << " g" << endl;
 }
 
 int sodiumhydroxidecheck()
 {
-	if(NaOH < 7600)
+	if(NaOH < 22800)
 	{
 		return 0;
 	}
-	if(NaOH > 8400)
+	if(NaOH > 25200)
 	{
 		return 0;
 	}
@@ -555,8 +555,8 @@ int sodiumhydroxidecheck()
 
 void Sodium_hydroxide()
 {
-	cout << "You are preparing 1000 mL 0.020 M sodium hydroxide solution:" << endl;
-	cout << "Weigh 0.800 g sodium hydroxide." << endl;
+	cout << "You are preparing 1000 mL 0.060 M sodium hydroxide solution:" << endl;
+	cout << "Weigh 2.400 g sodium hydroxide." << endl;
 	NaOH = 0;
 	cout << "You can finish the part when your current value is between 0.95 and 1.05 times of theoritical weight." << endl;
 	cout << "Key in +++ to add about 100 mg, ++ to add about 30 mg, + to add about 5 mg, - to restart, OK to finish." << endl;
@@ -1334,6 +1334,7 @@ int analyse()
 					c1 = (double(HNO2[savecode[i][j]])/690)*0.01;
 					c2 = (910*1.022)/93.126*0.001;
 					X[savecode[i][j]] = (12000/i)*(c1-c2)*100*(c1-c2)*100;
+					X[savecode[i][j]] /= 2;
 					double YA, YB, YC;
 					YA = (Am[0]-maxAbs[i][j])*c2;
 					YB = Am[0]*c1-maxAbs[i][j]*c2;
@@ -1351,6 +1352,7 @@ int analyse()
 					{
 						printf("%.2lfE-4 %.4lf\n", X[savecode[i][j]], Y[savecode[i][j]]);
 					}
+					X[savecode[i][j]] *= 2;
 //					cout << HNO2[savecode[i][j]] << " " << X[savecode[i][j]] << " " << c1 << " " << c2 << " " << Y[savecode[i][j]] << YA << " " << YB << " " << endl;
 				}
 			}
@@ -1364,6 +1366,7 @@ int analyse()
 	{
 		for(int j = 0; j < 10; j++)
 		{
+			X[savecode[i][j]] /= 2;
 			if(savecode[i][j])
 			{
 				if(del[savecode[i][j]])
@@ -1389,21 +1392,22 @@ int analyse()
 					printf("%.4lf\n", devt[savecode[i][j]]);
 				}
 			}
+			X[savecode[i][j]] *= 2;
 		}
 	}
-	printf("slope:      %.2f(¡À%.2f)\n", slope, um);
-	printf("intercept:  %.4f (¡À%.4f)\n", intercept, ub);
+	printf("slope:      %.2f(¡À%.2f)\n", slope*2, um);
+	printf("intercept:  %.4f (¡À%.4f)\n", intercept*2, ub);
 	printf("R2  =       %.4f\n", R2);
-	printf("\nY = %.2f X ", slope);
+	printf("\nY = %.2f X ", slope*2);
 	if(intercept < 0)
 	{
 		printf("-");
-		printf(" %.4f\n\n", -intercept);
+		printf(" %.4f\n\n", -intercept*2);
 	}
 	else
 	{
 		printf("+");
-		printf(" %.4f\n\n", intercept);
+		printf(" %.4f\n\n", intercept*2);
 	}
 	cout << "Key in OK to save the results, or discard any groups of data and then analyse again." << endl;
 	string input;

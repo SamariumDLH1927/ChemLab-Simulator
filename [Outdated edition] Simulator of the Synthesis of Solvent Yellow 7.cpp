@@ -1395,8 +1395,8 @@ int analyse()
 			X[savecode[i][j]] *= 2;
 		}
 	}
-	printf("slope:      %.2f(¡À%.2f)\n", slope*2, um);
-	printf("intercept:  %.4f (¡À%.4f)\n", intercept*2, ub);
+	printf("slope:      %.2f(Â¡Ã€%.2f)\n", slope*2, um);
+	printf("intercept:  %.4f (Â¡Ã€%.4f)\n", intercept*2, ub);
 	printf("R2  =       %.4f\n", R2);
 	printf("\nY = %.2f X ", slope*2);
 	if(intercept < 0)
